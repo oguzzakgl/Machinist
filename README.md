@@ -37,3 +37,14 @@ python manage.py runserver
 ```
 
 > **Not:** Ürün mock-up (sahte önizleme) verileri tamamen Frontend'teki State sistemlerine entegre edilmiştir. Kategoriye özel dinamik React Hook'larıyla anlık filtreleme yapılabilmektedir.
+
+## Ekran Görüntüleri
+
+### 1. Ana Yüz (Hero)
+![Ana Yüz](./screenshot1.png)
+
+### 2. Öne Çıkan Ürünler
+![Öne Çıkan Ürünler](./screenshot2.png)
+
+### 3. Hikaye ve Hakkımızda
+![Hikaye](./screenshot3.png)
