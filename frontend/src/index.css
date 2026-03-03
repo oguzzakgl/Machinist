@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Aydınlık Mod (Default) Renkler */
+  --color-primary-bg: #F5F5DC;
+  --color-primary-accent: #FFFFFF;
+  --color-primary-text: #000080;
+  --color-primary-text-muted: #A9A9A9;
+  --color-primary-button: #000080;
+  --color-primary-button-accent: #9A5A19;
+
+  /* Karanlık Mod Renkler */
+  --color-dark-bg: #0A0A0A;
+  --color-dark-accent: #000000;
+  --color-dark-text: #F5F5DC;
+  --color-dark-text-muted: #A3A3A3;
+  --color-dark-button: #F5F5DC;
+  --color-dark-button-accent: #B87333;
+
+  /* Fontlar */
+  --font-sans: "Inter", "Oswald", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-primary-bg text-primary-text transition-colors duration-300 font-sans;
+  }
+
+  .dark body {
+    @apply bg-dark-bg text-dark-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold font-serif;
+  }
+}
